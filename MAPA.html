@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mapa Leaflet - Página completa</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <style>
+        /* Ocupa toda la página sin scroll extra */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        /* El div del mapa ocupa todo el espacio disponible */
+        #map {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map = L.map('map').setView([6.1726, -75.6096], 15);
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.167752, -75.627019]).addTo(map)
+            .bindPopup('Coliseo Ditaires')
+            .openPopup();
+
+        // Marcador de ejemplo con popup
+        L.marker([6.169487, -75.627994]).addTo(map)
+            .bindPopup('Acuaparques Ditaires')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.169929, -75.627885]).addTo(map)
+            .bindPopup('Chorritos')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.191501, -75.617878]).addTo(map)
+            .bindPopup('Mirador La Chinca')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.178248, -75.598791]).addTo(map)
+            .bindPopup('Distrito Gastronómico')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.188221, -75.593755]).addTo(map)
+            .bindPopup('Bonfire Burger and Grill')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.172007, -75.609276]).addTo(map)
+            .bindPopup('Parque principal')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.171887, -75.611689]).addTo(map)
+            .bindPopup('Parque obrero')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.192324, -75.592416]).addTo(map)
+            .bindPopup('Parque de las chimeneas')
+            .openPopup();
+
+
+        // Añade control de escala
+        L.control.scale().addTo(map);
+    </script>
+</body>
+</html>

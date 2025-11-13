@@ -1,133 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Itagüí Turistico</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+  <title>Itagüí Turístico</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <!--MENU-->
-  <nav class="navbar navbar-expand-lg  bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Logo_Mesa de trabajo 1.png" alt="Bootstrap" width="70" height="70">
+<body class="bg-light" style="font-family: 'Karla', sans-serif;">
+  
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="Logo_Mesa de trabajo 1.png" alt="Logo" width="60" class="me-2">
+        <span class="fw-bold fs-5">ITAGÜÍ TURISTICO</span>
       </a>
-      <a class="navbar-brand karantina-bold text-light" href="#">ITAGÜÍ TURISTICO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link karla-David text-light" aria-current="page" href="#">INICIO</a>
-          </li>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white karla-David" href="index.html">INICIO</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle karla-David text-light" href="TEMATICA.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              TEMATICAS
-            </a>
+            <a class="nav-link dropdown-toggle text-white karla-David" data-bs-toggle="dropdown">TEMÁTICAS</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item karla-David text-body-secondary" href="Deportes.html">Deportes</a></li>
-              <li><a class="dropdown-item karla-David text-body-secondary" href="Gastronomia.html">Gastronomia</a></li>
-              <li>
-                <hr class="dropdown-divider ">
-              </li>
-              <li><a class="dropdown-item karla-David text-body-secondary" href="Cultura, arte y tradición.html">Cultura, arte y tradición</a></li>
+              <li><a class="dropdown-item karla-David" href="Deportes.html">Deportes</a></li>
+              <li><a class="dropdown-item karla-David" href="Gastronomia.html">Gastronomía</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item karla-David" href="Cultura, arte y tradición.html">Cultura, arte y tradición</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link karla-David text-light" aria-current="page" href="#">PERFIL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link karla-David text-light" aria-current="page" href="#">OPINIONES</a>
-          </li>
+          <li class="nav-item"><a class="nav-link text-white karla-David" href="LUGARES.html">LUGARES</a></li>
+          <li class="nav-item"><a class="nav-link text-white karla-David" href="EMPRENDIMIENTOS.html">EMPRENDIMIENTOS</a></li>
         </ul>
-        <form class="d-flex" role="Buscar">
-          <input class="form-control me-2 karla-David " type="Buscar" placeholder="Buscar" aria-label="Buscar" />
-          <button class="btn btn-outline-success karla-David text-light" type="submit">Buscar</button>
+
+        <form class="d-flex me-3">
+          <input class="form-control form-control-sm me-2" placeholder="Buscar">
+          <button class="btn btn-outline-light btn-sm karla-David">Buscar</button>
         </form>
+
+        <a class="btn btn-light btn-sm karla-David" href="PERFIL.html">Iniciar sesión</a>
       </div>
     </div>
   </nav>
 
-  <!--INICIO-->
-  <div class="container p-2">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <img src="Proyecto 1.jpg" class="border border-5 border-primary-subtle" width="100%">
+<!-- Inicio -->
+  <section class="container text-center py-5">
+    <img src="Proyecto 1.jpg" class="img-fluid rounded shadow" height="1500" width="1500" alt="Itagüí">
 
+    <h1 class="mt-4 fw-bold text-primary karantina-bold">¡Bienvenidos a Itagüí Turístico!</h1>
+    <p class="fs-5 text-secondary karla-David">
+      Itagüí no solo es reconocida por su dinamismo industrial y comercial,
+      sino también por sus encantos turísticos: su imponente Parque Artista,
+      festividades llenas de vida como las Fiestas de la Industria, el Comercio
+      y la Cultura, y sus hermosos espacios naturales.
+    </p>
+  </section>
+
+ 
+  <section class="container pb-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card bg-primary text-white border-0 h-100 shadow">
+          <img src="acuaparque-ditaires.jpg" class="card-img-top" alt="Acuaparques Ditaires">
+          <div class="card-body text-center">
+            <h4 class="fw-bold karantina-bold">Acuaparques Ditaires</h4>
+            <p>
+              Piscinas, sauna, turco y actividades deportivas como cursos,
+              clases y semilleros de diferentes disciplinas acuáticas.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-12">
-        <p class="text-center fs-1 karantina-bold">¡Bienvenidos a Itagüí Turístico!</p>
-        <p class="text-center fs-4 karla-David">Itagüí no solo es reconocida por su dinamismo industrial y comercial,
-          sino también por sus encantos turísticos que esperan ser descubiertos: desde su imponente Parque Artista,sus
-          festividades llenas de vida como las Fiestas de la Industria, el Comercio y la Cultura, hasta sus espacios
-          naturales.</p>
+
+      <div class="col-md-6">
+        <div class="card bg-primary text-white border-0 h-100 shadow">
+          <img src="Captura de pantalla 2025-10-21 a la(s) 8.00.12 a.m..png" class="card-img-top" alt="Montaña">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">La Montaña que Piensa</h4>
+            <p>
+              Mirador mágico con vista panorámica de la ciudad y gastronomía
+              típica para disfrutar en la cima.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <br>
+  <!-- Footer -->
+  <footer class="bg-white border-top py-4 mt-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5 class="text-primary fw-bold">Alcaldía de Itagüí</h5>
+          <ul class="list-unstyled">
+            <li>Sede Principal</li>
+            <li>Dirección: CAMI Carrera 51 51-55</li>
+            <li>Itagüí / Antioquia / Colombia</li>
+            <li>Código postal: 055412</li>
+            <li><a href="https://itagui.gov.co/" class="text-decoration-none" target="_blank">www.itagui.gov.co</a></li>
+          </ul>
+        </div>
 
-  <div class="row justify-content-evenly text-center">
-    <div class="col-4 bg-primary" style="height: 500;">
-      <img src="acuaparque-ditaires.jpg" class="pt-3" width="100%">
-      <p class="text-center fs-4 karantina-bold text-light">ACUAPARQUES DITAIRES</p>
-      <p class="text-center fs-4 karla-David text-light">Zonas húmedas como piscinas, sauna y turco; además de
-        actividades deportivas en las piscinas. Actividades deportivas a través de cursos, clases o semilleros de
-        diferentes disciplinas.</p>
+        <div class="col-md-4"></div>
 
-    </div>
-
-    <div class="col-4 bg-primary" style="height: 500;">
-      <img src="Captura de pantalla 2025-10-21 a la(s) 8.00.12 a.m..png" class="pt-3" width="100%">
-      <p class="text-center fs-4 karantina-bold text-light">LA MONTAÑA QUE PIENSA</p>
-      <p class="text-center fs-4 karla-David text-light">En Itagüí se esconde La Montaña que Piensa, un mirador mágico
-        donde la ciudad se ve pequeñita a tus pies. Aquí no solo disfrutas de una vista panorámico impresionante, sino
-        también de comida deliciosa .</p>
-    </div>
-  </div>
-  </div>
-  <br>
-
-  <div class="container">
-    <footer class="row py-5 my-5 border-top">
-      <div class="col-4 mb-3">
-        <h5>ALCALDIA DE ITAGÜÍ</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary karantina-bold">Sede
-              Principal</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary karla-David">Dirección: CAMI
-              Carrera 51 51-55</a></li>
-          <li class="nav-item mb-2"><a href="#"
-              class="nav-link p-0 text-body-secondary karla-David">Itagüí/Antioquia/Colombia</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Codigo postal:055412</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Paguina web de itagüí:
-              https://itagui.gov.co/</a></li>
-        </ul>
+        <div class="col-md-4 text-center">
+          <img src="Escudo_de_Itagüí.png" height="120" class="mb-2">
+          <p class="text-muted">© 2025</p>
+        </div>
       </div>
+    </div>
+  </footer>
 
-      <div class="col-4 mb-3"></div>
-      <div class="col-4 mb-3">
-        <img src="Escudo_de_Itagüí.png" class="pt-3" height="10%">
-        <p class="text-body-secondary">© 2025</p>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-</body>
 
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body></html>
